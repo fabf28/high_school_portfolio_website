@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Application Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color:darkgrey;
+            font-family: monospace;
+        }
+
+        .page{
+            height: 100vh;
+            margin: -10px;
+        }
+
+        .page.lead{
+            height: 120vh;
+        }
+
+        /*first div*/
+        div.info{
+            height: 100vh;
+            text-align: center; 
+            display: grid;
+            place-items: center;
+            color: lavender;
+        }
+
+        .name {
+            width: 45ch;
+            animation: typing 2s steps(45), blink .5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            font-family: monospace;
+            font-size: 2em;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+        }
+            
+        @keyframes blink {
+            50% {
+                border-color: transparent
+            }
+        }
+
+        .title{
+            font-family: monospace;
+            font-size: 600%;
+            justify-content:end;
+            align-items: center;  
+        }
+
+        /*second div*/
+
+        .about{
+            font-size: 550%;
+        }
+
+        div.video{
+            background-color: black;
+            justify-content: center;
+        }
+
+        .video-flex{
+            display: flex;
+            background-color: transparent;
+            justify-content: center;
+        }
+
+        .video-flex > div{
+            justify-content: center;
+            padding: 30px;
+            margin: 50px;
+            border-radius: 25px;
+        }
+
+        .vidContainer{
+            background-color: darkgray;
+        }
+
+        video{
+            display: flex;
+            background-color: black;
+            width: 600px;
+            height: 400px;
+            align-content: center;
+            padding: 1x;
+        }
+
+        .aboutContainer{
+            display: grid;
+            place-items: center;
+            width: 20%;
+            text-align: center;
+            color: lavender;
+
+        }
+
+        /*styling list divs*/
+        .subtitle{
+            font-size: 500%;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        h2{
+            padding-top: 20px;
+            line-height: 10px;
+        }
+
+        h3{
+            font-size: medium;
+            line-height: 10px;
+        }
+
+        p{
+            line-height: 20px;
+        }
+
+        .flexcol{
+            display: flex;
+            background-color: transparent;
+            height: 400px;
+            margin-top: 0px;
+        }
+
+        li{
+            font-size: large;
+            text-decoration: solid;
+            line-height: 20x;
+        }
+
+        ul{
+            padding-top: 30x;
+        }
+        .flexcols{
+            display: flex-direction;
+            background-color: transparent;
+            padding: 5x;
+            margin: 5px;
+            align-items: center;
+            justify-content: f;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .flexlists{
+            background-color: darkgrey;
+            width: 600px;
+            height: 130px;
+            padding: 10x;
+            padding-right: 30x;
+            margin-top: 0x;
+            margin-bottom: 10x;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .flexlists.forlead{
+            background-color: lavender;
+        }
+
+        .flexlists.oneline{
+            height: 50px;
+        }
+
+        .flexlists.twoline{
+            height: 100px;
+        }
+
+        .flexlists.empty{
+            background-color: black;
+            color: black;
+        }
+
+        /*third div*/
+        .stem{
+            background-color: lavender;
+        }
+
+        /*fourth div*/
+        .lead{
+            background-color: darkgray; 
+        }
+
+        /*fifth div*/
+        .math{
+            background-color: black;
+            color: lavender;
+        }
+
+        /*sixth div*/
+        .accomplish{
+            background-color: lavender;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="info page">
+        <h1 class = "title"> Personal <br> Application <br> Form</h1>
+        <strong class = "name"> Hi my name is Oluchukwu Favour Iheanyichukwu. </strong><br>
+    </div>
+
+    <div class="video page">
+        <div class="video-flex">
+            <div class="vidContainer">
+                <video controls = "controls" src="WIN_20230228_21_24_44_Pro.mp4"></video>
+            </div>
+            <div class = "aboutContainer" >
+                <strong class = "about"> About Me</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="stem page">
+        <h1 class="stem subtitle"> STEM Related Projects</h1>
+        <div class="flexcol">
+            <div class = "flexcols">
+                <div class = "flexlists"> 
+                    <h2>Technovation Project</h2>
+                    <h3>JANUARY 2023 - PRESENT</h3>
+                    <p>Currently colaborating with 4 other girls to develop an application with 
+                        Flutter that will help connect refugees newly arriving in Canada with other refugees.</p>
+                </div>
+                <div class = "flexlists"> 
+                    <h2> CERN Beamline Project</h2>
+                    <h3> FEBRUARY 2023 - PRESENT</h3>
+                    <p> Currently collaborating with a group of students on a 
+                        physics based proposal to take to the beamline.</p>
+                </div>
+                <div class = "flexlists"> 
+                    <h2>Science Fair</h2>
+                    <h3>NOVEMBER 2022 - PRESENT</h3>
+                    <p>Working with partner to determine the relationship between 
+                        genetic mutations and certain responses to blood clotting medication.</p>
+                </div>
+
+            </div>
+            <div class = "flexcols">
+                <div class = "flexlists"> 
+                    <h2> Stem Fellowship Big Data Research Challenge</h2>
+                    <h3>OCTOBER 2022 - JANUARY 2023</h3>
+                    <p> Worked with 3 other girls on a research paper titled <a href="https://drive.google.com/file/d/1ciGJQKBX5Z3BB0UDbX2QxvI39dzEXqTg/view">"Determining the 
+                        Role of Government Investment in Housing on Educational Success"</a> that 
+                        is published on the Stem Fellowship website.</p>
+                </div>
+                <div class = "flexlists"> 
+                    <h2> Designer Genes Club</h2>
+                    <h3> OCTOBER 2022 - DECEMBER 2022</h3>
+                    <p> Worked with a partner to clone the gene of a basil plant.</p>
+
+                </div>
+                <div class = "flexlists"> 
+                    <h2> Science Olympics</h2>
+                    <h3> FEBRUARY 2022 - MAY 2023</h3>
+                    <p> Collaborated with a group of girls on a physics challenge in which 
+                        we were to create a scale sized amuzement park ride that was fully functional.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="lead page">
+        <h1 class="lead subtitle"> Volunteering and Leadership</h1>
+        <div class="flexcol">
+            <div class = "flexcols">
+                <div class = "flexlists forlead"> 
+                    <h2> Prominence Way Volunteer</h2>
+                    <h3>JULY 2022 - AUGUST 2022</h3>
+                    <p> Spent my 2022 summer volunteering at and home for old folk.</p>
+                </div>
+                <div class = "flexlists forlead"> 
+                    <h2> Legacy Club Member</h2>
+                    <h3> SEPTEMBER 2021 - PRESENT</h3>
+                    <p> Member of a club at my school that has students collect bottles
+                         to raise money for individuals in need.</p>
+                </div>
+                <div class = "flexlists forlead"> 
+                    <h2> Student Council Member</h2>
+                    <h3>SEPTEMBER 2021 - JUNE 2022</h3>
+                    <p> Voted on different laws that affected students at my 
+                        school and helped to organize events such as my school spring formal.</p>
+                </div>
+                <div class = "flexlists forlead"> 
+                    <h2> Cofounder of Programming Club</h2>
+                    <h3> SEPTEMBER 2022 - PRESENT</h3>
+                    <p> Worked together with another student passionate about programming to create
+                         a programming club for both junior high and senior high students at Webber Academy.</p>
+                </div>
+
+            </div>
+            <div class = "flexcols">
+                <div class = "flexlists forlead"> 
+                    <h2> <a href="https://www.depop.com/favourlheanyi/"> Faves Clothing </a> Clothing Managing Director and Executive</h2>
+                    <h3> AUGUST 2020 - PRESENT</h3>
+                    <p> Opened a crotchet depop store during quarantine as I was interested in 
+                        understanding how to run a business and decided the best way to learn was to attempt to do so.</p>
+                </div>
+                <div class = "flexlists forlead"> 
+                    <h2> Church Choir Member</h2>
+                    <h3>SEPTEMBER 2018 - PRESENT</h3>
+                    <p> I volunteer to sing every Sunday at Restoration House Calgary and attend weekly 
+                        practices on Saturdays as a way to give back to my community.</p>
+                </div>
+                <div class = "flexlists forlead"> 
+                    <h2> Mental Health Representative</h2>
+                    <h3> SEPTEMBER 2019 - JANUARY 2020</h3>
+                    <p> I was one of few students selected in St. Joan of Arc to represent the school at an 
+                        annual mental health convention where I learnt ways to raise mental health awareness at my school.</p>
+                </div>
+                <div class = "flexlists forlead"> 
+                    <h2> Baking Club Member</h2>
+                    <h3>JANUARY 2018 - MARCH 2020</h3>
+                    <p> Participated weekly in a club in which we baked cookies for homeless people.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="math page">
+        <h1 class="math subtitle"> Math Competitions Participated In</h1>
+        
+        <div class="flexcol">
+            <div class = "flexcols">
+                <div class = "flexlists oneline"> 
+                    <h2>Alberta High School Mathematics Competition</h2>
+                </div>
+                <div class = "flexlists oneline"> 
+                    <h2> American Mathematics Competition</h2>
+                </div>
+                <div class = "flexlists oneline"> 
+                    <h2> Canadian Senior and Intermediate Competition</h2>
+                </div>
+                <div class = "flexlists oneline"> 
+                    <h2>Beaver Computing Challeng</h2>
+                </div>
+                <div class = "flexlists oneline"> 
+                    <h2>Pascal Mathematics Competition</h2>
+                </div>
+                <div class = "flexlists oneline"> 
+                    <h2>Cayley Mathematics Competition</h2>
+                </div>
+            </div>
+            <div class = "flexcols">
+                <div class = "flexlists oneline"> 
+                    <h2> Canadian Open Mathematics Challenge</h2>
+                </div>
+                <div class = "flexlists oneline"> 
+                    <h2> Caribou Contest</h2>
+                </div>
+                <div class = "flexlists oneline"> 
+                    <h2> Math League</h2>
+                </div>
+                <div class = "flexlists oneline"> 
+                    <h2>Canadian Computing Challenge</h2>
+                </div>
+                <div class = "flexlists oneline"> 
+                    <h2>Fermat Mathematics Competition</h2>
+                </div>
+                <div class = "flexlists oneline empty"> 
+                    <h2> empty</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accomplish page">
+        <h1 class="accomplish subtitle">Accommplishments and Awards</h1>
+        <div class="flexcol">
+            <div class = "flexcols">
+                <div class = "flexlists oneline"> 
+                    <h2>Let's Talk Science Analytics Talent Award 2023</h2>
+                </div>
+                <div class = "flexlists twoline"> 
+                    <h2> Stem Fellowship Big Data Research Challenge Top 20 </h2>
+                    <h2>Finalist 2023</h2>
+                </div>
+                <div class = "flexlists oneline"> 
+                    <h2> 2nd Place Apega Science Olympics 2022</h2>
+                </div>
+                <div class = "flexlists twoline"> 
+                    <h2> Bronze Medal Solo Acting- Westmount Charter </h2>
+                    <h2>High School Speech Tournament 2022</h2>
+                </div>
+            </div>
+            <div class = "flexcols">
+                <div class = "flexlists oneline"> 
+                    <h2> Webber Scholar Award 2022</h2>
+                </div>
+                <div class = "flexlists twoline"> 
+                    <h2> Spanish 10 Subject Award 2022</h2>
+                </div>
+                <div class = "flexlists oneline"> 
+                    <h2> 5th Place Junior High Science Fair 2020</h2>
+                </div>
+                <div class = "flexlists twoline"> 
+                    <h2> Bronze Medal Poetry Interpretation- Joane Schubert </h2>
+                    <h2>High School Speech Tournament 2022</h2>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
